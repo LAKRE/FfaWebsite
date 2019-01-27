@@ -19,6 +19,14 @@
 Elle propose plusieurs activités à ses adhérents (Mixed Martial Arts, Pancrace, Boxe Thai, Grappling, Lutte Libre & Jiu-Jitsu Brésilien).
 La Free Fight Academy est gérée par une équipe de professeurs diplômés d'Etat. Elle entraïne une équipe de combattants professionnels mais s'adresse aussi aux pratiquants loisir, hommes et femmes recherchant une méthode d'entretien physique ou de self-défense. </p>  
     </transition>
+    <agile>
+    <div class="slide slide--1"><h3>slide 1</h3></div>
+    <div class="slide slide--2"><h3>slide 2</h3></div>
+    <div class="slide slide--3"><h3>slide 3</h3></div>
+    <div class="slide slide--4"><h3>slide 4</h3></div>
+    <div class="slide slide--5"><h3>slide 5</h3></div>
+    <div class="slide slide--6"><h3>slide 6</h3></div>
+    </agile>
     <div class="footer">
     </div>
   </div>
@@ -26,8 +34,7 @@ La Free Fight Academy est gérée par une équipe de professeurs diplômés d'Et
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-declare module 'vue-agile'
-
+import VueAgile from 'vue-agile'
 
 
 @Component({
@@ -140,6 +147,29 @@ export default class HelloWorld extends Vue {
   transform: translateY(50px);
   opacity: 0;
  }
+ .slide {
+    color: #fff;
+    height: 300px;
+    position: relative;
+
+    &--1 {
+        background-color: #f1c40f;
+    }
+
+     &--2 {
+        background-color:red;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 300;
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
   
   
